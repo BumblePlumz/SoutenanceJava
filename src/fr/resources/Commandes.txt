@@ -6,4 +6,3 @@
 2;22/09/2022;Chirac Bernadette;LIVRE-3=7
 3;23/09/2022;Martin Jacques;LIVRE-1=8
 4;23/09/2022;Bruni Carla;LIVRE-1=9
-
