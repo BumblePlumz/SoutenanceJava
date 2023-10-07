@@ -3,7 +3,7 @@
     <Appenders>
         <File name="info" fileName="src/fr/resources/info.log">
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
-            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg" />
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
         </File>
         <File name="error" fileName="src/fr/resources/error.log">
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY" />

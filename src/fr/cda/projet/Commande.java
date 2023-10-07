@@ -30,32 +30,8 @@ public class Commande
         return numero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public String getClient() {
-        return client;
-    }
-
-    public void setClient(String client) {
-        this.client = client;
-    }
-
     public List<String> getReferences() {
         return references;
-    }
-
-    public void setReferences(List<String> references) {
-        this.references = references;
     }
 
     public boolean isLivrer() {
@@ -80,11 +56,12 @@ public class Commande
 
     /**
      * On met les références en forme pour les afficher
-     * @param bool true pour afficher l'attribut raison
+     * @param afficherRaison true pour afficher l'attribut raison
+     * @param afficherLivrer true pour afficher l'attribut livrer
      * @return une chaîne de caractère contenant les références d'une commande
      * @author Nguyen Nicolas
      */
-    private String refsToString(boolean bool){
+    private String refsToString(boolean afficherRaison, boolean afficherLivrer){
         StringBuilder sb = new StringBuilder();
         String alinea = "\t";
         String n = "\n";
@@ -107,48 +84,52 @@ public class Commande
                 sb.append(n);
             }
         }
-        // L'affichage doit-il prendre en compte les raisons
-        if (!bool){
-            sb.append("=================================================");
-        }else{
+        // L'affichage, doit-il prendre en compte les raisons
+        if (afficherRaison){
             // On vérifie que la commande n'est pas livrée
             if (!livrer){
-                System.out.println("Début de la mise en forme");
                 String[] raisons = raison.split(";");
-
+                // On vérifie que des raisons exitent
                 if (raison.length() > 0){
                     for (int i = 0; i < raisons.length; i++) {
+                        // On vérifie que les raisons ne sont pas vide
                         if (!raisons[i].isEmpty()){
-                            System.out.println("Raison "+i+" : "+raisons[i]);
                             String[] donnees = raisons[i].split("=");
-                            sb.append("Il manque "+donnees[1]+" "+donnees[0]);
+                            String texte = "Il manque "+donnees[1]+" "+donnees[0];
+
+                            sb.append(texte);
                             sb.append(n);
                         }
                     }
                 }else{
-                    Site.logger.info("Une erreur s'est produite dans la mise en forme des raisons d'une commande");
+                    Site.loggerInfo.info("Une erreur s'est produite dans la mise en forme des raisons d'une commande");
                 }
-            }else{
+            }
+        }
+        if (afficherLivrer){
+            if (livrer){
                 sb.append("La commande a été livrée");
                 sb.append(n);
+            }else{
+                sb.append("!!! La commande n'a pas été livrée !!!");
+                sb.append(n);
             }
-            sb.append("=================================================");
         }
+        sb.append("=================================================");
         return sb.toString();
     }
     public String toStringLivrable(){
-        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(true));
+        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(true, true));
     }
     @Override
     public String toString() {
-        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(false));
+        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(false, true));
     }
 }
 /**
  * Classe de gestion d'erreur des commandes
  *
  * @author Nguyen Nicolas
- * @version v1
  */
 class CommandeException extends RuntimeException {
     public CommandeException(String msg, Throwable cause) {

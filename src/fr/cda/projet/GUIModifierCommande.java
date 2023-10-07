@@ -3,6 +3,7 @@ package projet;
 import ihm.Formulaire;
 import ihm.FormulaireInt;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -69,8 +70,10 @@ public class GUIModifierCommande implements FormulaireInt {
                 form.fermer();
                 break;
             default:
+                JOptionPane.showMessageDialog(null, "Une erreur est survenu votre action n'a pas été enregistrée", "Erreur", JOptionPane.INFORMATION_MESSAGE);
                 throw new IllegalStateException("Valeur inattendue : " + nom);
         }
+        form.fermer();
     }
 
     private void validerStock(List<String> listeValeurs) {
@@ -82,7 +85,11 @@ public class GUIModifierCommande implements FormulaireInt {
                 }
             }
         }
+        try{
+            formPP.site.reCalculerStock(commande);
+        }catch (CommandeException e){
+            formPP.site.logger.error("Une erreur est survenu dans la recalculation des stocks ", e);
+        }
         // Recalcul des stocks
-        formPP.site.reCalculerStock(commande);
     }
 }

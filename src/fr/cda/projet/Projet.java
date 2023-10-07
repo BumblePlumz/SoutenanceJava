@@ -18,6 +18,7 @@ import util.*;
 public class Projet
 {
     private static final Logger logger = LogManager.getLogger(Projet.class);
+    private static final Logger loggerInfo = LogManager.getLogger("info");
     public static void main(String a_args[])
     {
         Terminal.ecrireStringln("Execution du projet ");
@@ -39,7 +40,7 @@ public class Projet
 //        System.out.println("Print");
 //        System.out.println("Root Logger Level: " + LogManager.getRootLogger().getLevel());
 //
-//        logger.info("Ceci est un message d'information.");
+//        loggerInfo.info("Ceci est un message d'information.");
 //        logger.error("Ceci est un message d'erreur.");
 
 

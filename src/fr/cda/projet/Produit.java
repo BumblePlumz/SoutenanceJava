@@ -34,10 +34,6 @@ public class Produit
         return reference;
     }
 
-    public int getQuantite() {
-        return quantite;
-    }
-
     public void ajoutQuantite(int quantite){
         this.quantite += quantite;
     }
@@ -48,7 +44,7 @@ public class Produit
      * @return vrai ou faux
      */
     public boolean isCalculQuantite(int nombre){
-        return Calcul.soustraction(this.quantite, nombre, false) > 0;
+        return Calcul.soustraction(this.quantite, nombre, false) >= 0;
     }
 
     /**

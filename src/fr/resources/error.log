@@ -709,3 +709,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
 
+22:47:18 [main] ERROR projet.Site - Ceci est un message d'erreur.
+22:51:48 [main] ERROR projet.Site - Ceci est un message d'erreur.
+22:54:14 [main] ERROR projet.Projet - Ceci est un message d'erreur.
+22:58:20 [main] ERROR projet.Projet - Ceci est un message d'erreur.
