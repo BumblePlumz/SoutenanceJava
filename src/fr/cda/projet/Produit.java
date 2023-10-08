@@ -30,6 +30,10 @@ public class Produit
         this.quantite = quantite;
     }
 
+    public double getPrix() {
+        return prix;
+    }
+
     public String getReference() {
         return reference;
     }

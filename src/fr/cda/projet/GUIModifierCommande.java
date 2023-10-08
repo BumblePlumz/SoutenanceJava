@@ -45,9 +45,12 @@ public class GUIModifierCommande implements FormulaireInt {
         }
 
         // Affichage du bouton de validation
-        form.setPosition(80, 225);
+        form.setPosition(80, 150);
         form.addButton("SUBMIT", "Valider les changements de stock");
-        form.addLabel("");
+        form.setPosition(20, 175);
+        form.addLabel("*La commande sera automatiquement livré");
+        form.addLabel(" si les stocks sont suffisant");
+        form.setPosition(150,225);
         form.addButton("FERMER", "Fermer");
         form.afficher();
     }

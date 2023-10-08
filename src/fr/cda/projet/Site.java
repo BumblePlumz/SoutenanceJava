@@ -74,6 +74,8 @@ public class Site
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < commandes.size(); i++) {
             if (i > 0){
+                // On calcul la commande pour être sur que les données raison sont à jour
+                calculStock(commandes.get(i));
                 sb.append("\n");
                 sb.append(commandes.get(i));
             }
@@ -94,6 +96,8 @@ public class Site
         StringBuilder sb = new StringBuilder();
         try {
             if (numero > 0 && numero < commandes.size()){
+                // On calcul la commande pour être sur que les données raison sont à jour
+                calculStock(commandes.get(numero));
                 sb.append(commandes.get(numero).toStringLivrable());
             }else{
                 loggerInfo.info("Une recherche hors champs a été détectée");
@@ -182,6 +186,8 @@ public class Site
         try{
             for (Commande commande : commandes) {
                 if (commande != null && !commande.isLivrer()){
+                    // On calcul la commande pour être sur que les données raison sont à jour
+                    calculStock(commande);
                     sb.append("\n");
                     sb.append(commande.toStringLivrable());
                 }
@@ -201,39 +207,43 @@ public class Site
         // Pour toutes les commandes
         for (Commande commande : commandes) {
             if (commande != null && !commande.isLivrer()){
-                commande.setRaison("");
-                List<String> refs = commande.getReferences();
-                int refValider = 0;
+                calculStock(commande);
+            }
+        }
+    }
 
-                // Pour toutes les références d'une commande
-                for (String ref : refs) {
-                    String[] refParts = ref.split("=");
-                    String reference = refParts[0];
-                    int quantite = Integer.parseInt(refParts[1]);
+    private void calculStock(Commande commande) {
+        commande.setRaison("");
+        List<String> refs = commande.getReferences();
+        int refValider = 0;
 
-                    // Vérification de la corrumption des données
-                    if (refParts.length != 2) { throw new CommandeException("Une corruption de donnée s'est produite dans des références de commande", new IndexOutOfBoundsException()); }
+        // Pour toutes les références d'une commande
+        for (String ref : refs) {
+            String[] refParts = ref.split("=");
+            String reference = refParts[0];
+            int quantite = Integer.parseInt(refParts[1]);
 
-                    // Pour tous les produits
-                    for (Produit produit : stock) {
-                        if (produit.getReference().equals(reference)){
-                            // Vérification de la disponibilité
-                            if (!produit.isCalculQuantite(quantite)){
-                                formatRaison(commande, quantite, produit);
-                            }else{
-                                // Soustraction de la quantitée
-                                produit.soutraireStock(quantite);
-                                loggerInfo.info("Retiré du stock : "+quantite+" "+produit.getReference());
-                                refValider++;
-                            }
-                        }
+            // Vérification de la corrumption des données
+            if (refParts.length != 2) { throw new CommandeException("Une corruption de donnée s'est produite dans des références de commande", new IndexOutOfBoundsException()); }
+
+            // Pour tous les produits
+            for (Produit produit : stock) {
+                if (produit.getReference().equals(reference)){
+                    // Vérification de la disponibilité
+                    if (!produit.isCalculQuantite(quantite)){
+                        formatRaison(commande, quantite, produit);
+                    }else{
+                        // Soustraction de la quantitée
+                        produit.soutraireStock(quantite);
+                        loggerInfo.info("Retiré du stock : "+quantite+" "+produit.getReference());
+                        refValider++;
                     }
                 }
-                // Si on a validé autant de référence qu'il en existe on peut livrer la commande
-                if (refValider == commande.getReferences().size()){
-                    commande.setLivrer(true);
-                }
             }
+        }
+        // Si on a validé autant de référence qu'il en existe on peut livrer la commande
+        if (refValider == commande.getReferences().size()){
+            commande.setLivrer(true);
         }
     }
 
