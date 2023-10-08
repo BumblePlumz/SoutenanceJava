@@ -1,0 +1,721 @@
+21:58:23.095 [AWT-EventQueue-0] INFO  projet.Site - Une recherche hors champs a ï¿½tï¿½ dï¿½tectï¿½e
+22:01:05.352 [main] ERROR projet.Site - Une collection n'a pas pu ï¿½tre chargï¿½e correctement
+java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at projet.Site.initialiserStock(Site.java:107)
+	at projet.Site.<init>(Site.java:32)
+	at projet.Projet.main(Projet.java:30)
+22:06:20.436 [main] ERROR projet.Site - Une collection n'a pas pu ï¿½tre chargï¿½e correctement
+java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at projet.Site.initialiserStock(Site.java:107)
+	at projet.Site.<init>(Site.java:32)
+	at projet.Projet.main(Projet.java:30)
+
+01:07:40.591 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.419 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.730 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:10:48.733 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.921 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:11:34.924 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.924 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.925 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.925 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.528 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.209 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.578 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:24:47.581 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.581 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.582 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.582 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.797 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.001 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.978 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.777 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.147 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.810 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.102 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:32:00.105 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.980 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.757 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.761 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.918 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.383 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.929 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.162 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.009 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:39:54.012 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.012 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.013 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.013 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.563 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.751 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.755 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.871 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.964 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:46:38.967 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.967 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.968 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.968 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.815 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.661 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.791 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:42.794 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.794 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.795 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.795 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.599 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.882 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.571 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:57:09.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.826 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.571 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.575 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.731 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.045 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.909 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.814 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.962 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.447 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.356 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.910 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.287 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.659 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.421 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.892 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.953 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.210 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.534 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:56:23.538 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.561 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.124 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.407 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.046 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.050 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.447 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.059 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.795 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+
+
+22:55:00 [main] INFO  projet.Projet - Ceci est un message d'information.
+22:55:00 [main] ERROR projet.Projet - Ceci est un message d'erreur.
+22:55:13 [main] INFO  projet.Projet - Ceci est un message d'information.
+22:55:13 [main] ERROR projet.Projet - Ceci est un message d'erreur.
+22:58:20 [main] INFO  info - Ceci est un message d'information.
+22:59:26 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+22:59:26 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+22:59:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+22:59:26 [main] INFO  info - La commande : 1 a été validée
+22:59:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+22:59:26 [main] INFO  info - La commande : 2 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 2 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 3 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 4 n'a pas été validée
+23:01:00 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:01:00 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:01:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:01:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:11:30 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:11:30 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:11:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:11:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:12:12 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:12:12 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:12:12 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:12:12 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:13:32 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:13:32 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:13:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:13:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:19:08 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:19:08 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:19:08 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:19:08 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:20:07 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:20:07 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:20:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:20:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:24:35 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:24:35 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:24:35 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:24:35 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:24:41 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+23:24:45 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:24:45 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:25:12 [AWT-EventQueue-0] INFO  info - Modification commande : 3 | Retiré du stock : 8 LIVRE-1
+23:26:53 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:26:53 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:26:53 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:26:53 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:26:58 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:26:58 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:27:27 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:27:27 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:27:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:27:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:27:31 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:27:31 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:27:40 [AWT-EventQueue-0] INFO  info - Modification commande : 3 | Retiré du stock : 8 LIVRE-1
+23:33:37 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:33:37 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:33:37 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:33:37 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:34:16 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:34:16 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:34:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:34:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:34:34 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:34:34 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:34:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:34:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:35:07 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:35:07 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:35:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:35:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:35:38 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:35:38 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+00:07:11 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:07:11 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:07:11 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:07:11 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:07:46 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:07:46 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:07:46 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:07:46 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:08:18 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:08:18 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:08:18 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:08:18 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:06 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:06 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:06 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:06 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:27 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:27 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:39 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:39 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:39 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:39 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:12:19 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:12:19 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:12:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:12:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:12:44 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:12:44 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:12:44 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:12:44 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:14:28 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:14:28 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:14:28 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:14:28 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:14:34 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:14:34 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:14:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:14:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:18:16 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:18:16 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:18:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:18:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:20:30 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:20:30 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:20:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:20:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:20:34 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+00:20:34 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
