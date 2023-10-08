@@ -139,10 +139,10 @@ public class GUISite implements FormulaireInt
                     }catch (IllegalStateException e){
                         site.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
                     }catch (ArrayIndexOutOfBoundsException e){
-                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                     }catch (NumberFormatException e){
-                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                     }
                     break;

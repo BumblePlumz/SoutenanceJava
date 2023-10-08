@@ -1170,3 +1170,27 @@ java.lang.NullPointerException: Cannot read the array length because "<local3>" 
 22:28:34 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
 22:28:34 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
 22:28:34 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:39:29 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:39:30 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+22:39:30 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+22:39:30 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:39:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:39:45 [main] INFO  info - Commande : 4 validée.
+22:39:45 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:39:45 [main] INFO  info - -------------------------------------------------------
+22:40:53 [main] INFO  info - Commande : 4 validée.
+22:40:53 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:40:53 [main] INFO  info - -------------------------------------------------------
+22:45:59 [main] INFO  info - Commande : 4 validée.
+22:45:59 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:45:59 [main] INFO  info - -------------------------------------------------------
+22:52:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:55:39 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:55:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:04 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:04 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:57:01 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
+22:57:01 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:57:01 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------

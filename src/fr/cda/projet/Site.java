@@ -37,8 +37,8 @@ public class Site
             // lecture du fichier resources/Commandes.txt |  pour chaque ligne on créer une Commande que l'on ajoute à commandes ou l'on ajoute la une référence d'un produit a une commande existante
             initialiserCommandes("src/fr/resources/Commandes.txt");
 
-            // Calcul des stocks
-            calculInitialStock();
+            // On vérifie les commandes et génère les attributs raisons des commandes
+            initialisationDesReferences();
 
         }catch (IndexOutOfBoundsException e){
             logger.error("Une boucle sur une collection a générée une erreur", e);
@@ -135,7 +135,7 @@ public class Site
                 }
                 commande.getReferences().add(ref);
                 commandes.add(commande);
-                this.indexCommande++;
+                Site.indexCommande++;
             }
         }
     }
@@ -233,15 +233,13 @@ public class Site
     }
 
     /**
-     * Calcul initial des commandes livrer et des stocks restant ainsi que des quantitées manquante pour valider une commande
-     * @exception CommandeException la procédure peut générer une exception
+     * Générer les attributs raisons des commandes
      * @author Nguyen Nicolas
      */
-    public void calculInitialStock() {
-        // Pour toutes les commandes
+    public void initialisationDesReferences() {
         for (Commande commande : commandes) {
             if (commande != null && !commande.isLivrer()){
-                calculStock(commande);
+                estValide(commande);
             }
         }
     }
@@ -292,6 +290,7 @@ public class Site
     /**
      * On vérifie si une commande peut être validée en rapport avec les quantitées de produits en stock
      * @param commande commande par laquelle on vérifie l'état des stocks de ses références
+     * @exception NumberFormatException peut générer une erreur
      * @return boolean Est-elle valide pour livraison
      */
     private boolean estValide(Commande commande) {
