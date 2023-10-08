@@ -43,7 +43,6 @@ public class IHMSite implements FormulaireInt
     //
     public void submit(Formulaire form,String nomSubmit)
     {
-
         // Affichage de tous les produits du stock
         //
         if (nomSubmit.equals("AFF_STOCK"))
@@ -56,7 +55,7 @@ public class IHMSite implements FormulaireInt
         //
         if (nomSubmit.equals("AFF_COMMANDES"))
             {
-                String res = site.listerToutesCommandes();
+                String res = site.listerToutesCommandes(false);
                 form.setValeurChamp("RESULTATS",res);
             }
 
@@ -66,7 +65,7 @@ public class IHMSite implements FormulaireInt
             {
                 String numStr = form.getValeurChamp("NUM_COMMANDE");
                 int num = Integer.parseInt(numStr);
-                String res = site.listerCommande(num);
+                String res = site.listerCommande(num, false);
                 form.setValeurChamp("RESULTATS",res);
             }
     }

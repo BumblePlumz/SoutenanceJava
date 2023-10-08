@@ -6,7 +6,7 @@ import java.util.*;
  * Classe de définition d'une commande
  *
  * @author Nguyen Nicolas
- * @version 0.05
+ * @version 1.00
  */
 public class Commande
 {
@@ -24,6 +24,21 @@ public class Commande
         this.date = date;
         this.client = client;
         this.references = new ArrayList<>();
+    }
+
+    public Commande(int numero, String date, String client, List<String> references) {
+        this.numero = numero;
+        this.date = date;
+        this.client = client;
+        this.references = references;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getClient() {
+        return client;
     }
 
     public int getNumero() {
@@ -45,7 +60,6 @@ public class Commande
     public String getRaison() {
         return raison;
     }
-
     public void setRaison(String raison) {
         this.raison = raison;
     }
@@ -106,33 +120,39 @@ public class Commande
                 }
             }
         }
+        // L'affichage, doit-il prendre en compte l'annotation livrer
         if (afficherLivrer){
             if (livrer){
                 sb.append("La commande a été livrée");
                 sb.append(n);
             }else{
-                sb.append("!!! La commande n'a pas été livrée !!!");
-                sb.append(n);
+                if (this.raison.isEmpty()){
+                    sb.append("La commande est prête à être livrée");
+                    sb.append(n);
+                }else{
+                    sb.append("!!! La commande n'a pas été livrée !!!");
+                    sb.append(n);
+                }
             }
         }
+        // Clotûre de l'affichage
         sb.append("=================================================");
         return sb.toString();
     }
-    public String toStringLivrable(){
-        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(true, true));
+
+    /**
+     * Surcharge de la méthode toString
+     * @param afficherRaison Afficher les raisons
+     * @param afficherLivrer Afficher l'état de 'livrer' de la commande
+     * @return String formatter pour l'affichage
+     * @author Nguyen Nicolas
+     */
+    public String toString(Boolean afficherRaison, Boolean afficherLivrer){
+        return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(afficherRaison, afficherLivrer));
     }
+
     @Override
     public String toString() {
         return String.format(" Commande : %-5d \n Date     : %-15s \n Client   : %-15s %s", numero, date, client, refsToString(false, true));
-    }
-}
-/**
- * Classe de gestion d'erreur des commandes
- *
- * @author Nguyen Nicolas
- */
-class CommandeException extends RuntimeException {
-    public CommandeException(String msg, Throwable cause) {
-        super(msg, cause);
     }
 }

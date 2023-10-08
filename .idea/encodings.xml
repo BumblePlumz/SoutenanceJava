@@ -8,8 +8,6 @@
     <file url="file://$PROJECT_DIR$/src/fr/resources/Produits.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/fr/resources/error.log" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/fr/resources/log4j2.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>

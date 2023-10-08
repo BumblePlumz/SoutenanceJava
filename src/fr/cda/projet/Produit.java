@@ -6,7 +6,7 @@ import util.Calcul;
  * Classe de gestion des produits
  *
  * @author Vendor & Nguyen Nicolas
- * @version 0.05
+ * @version 1.00
  */
 public class Produit
 {
@@ -28,6 +28,14 @@ public class Produit
         this.nom = nom;
         this.prix = prix;
         this.quantite = quantite;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public int getQuantite() {
+        return quantite;
     }
 
     public double getPrix() {

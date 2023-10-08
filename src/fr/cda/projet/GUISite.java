@@ -1,8 +1,10 @@
 package projet;
 
 import ihm.*;
+import util.Terminal;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -13,45 +15,62 @@ import java.util.*;
  * Classe de définition de l'IHM principale du compte
  *
  * @author Vendor & Nguyen Nicolas
- * @version 0.01
+ * @version 1.00
  */
 public class GUISite implements FormulaireInt
 {
-    // Protected permet l'accès au méthode de site dans les enfants donc les fenêtres de modification
+    // Protected permet l'accès au méthode de site dans les enfants donc les fenêtres de modifications
     protected Site site;
+    // Formulaire placé en attribut pour l'accès des enfants à celui-ci et l'actualisation des affichages
+    protected Formulaire form = new Formulaire("Site de vente",this,1100,730);
+    private JCheckBox calculCheckBox;
 
-    // Constructeur
-    //
+    /**
+     * Constructeur de l'ihm GUISite
+     * @param site le site qui va servir de controleur pour les données de l'affichage
+     * @author vendor & Nguyen Nicolas
+     */
     public GUISite(Site site)
     {
         this.site = site;
-
-        // Creation du formulaire
-        Formulaire form = new Formulaire("Site de vente",this,1100,730);
         
-        //  Creation des elements de l'IHM
-        //
+        // Affichage des données
         form.setPosition(20, 20);
         form.addLabel("Afficher tous les produits du stock");
         form.addButton("AFF_STOCK","Tous le stock");
+
         form.addLabel("");
         form.addLabel("Afficher tous les bons de commande");
         form.addButton("AFF_COMMANDES","Toutes les commandes");
         form.addLabel("");
+
+        // Sélection et affichage d'un commande et ses actions possibles (modification/calcul)
         form.addText("NUM_COMMANDE","Numero de commande : ",true,"1");
         form.addButton("AFF_COMMANDE","Afficher");
         form.setPosition(100, 181);
         form.addButton("MODIF_COMMANDE", "Modifier");
         form.setPosition(180, 181);
         form.addButton("CALC_COMMANDE", "prix");
+        form.setPosition(232, 181);
+        form.addButton("LIVRER", "Livrer");
+
+        // Affichage des commandes non livrées
         form.setPosition(20, 205);
         form.addLabel("");
         form.addButton("AFF_LIVRER", "Afficher les commandes non livrées");
+
+        // Calculer les ventes totales
         form.addLabel("");
         form.addButton("CALC_VENTE", "Calculer les ventes");
         form.addLabel("");
+        form.addButton("AJOUT_COMMANDE", "Ajouter un bon de commande");
+        form.setPosition(137, 600);
+
+        // Sauvegarder
         form.addButton("SAUVER", "Sauvegarder");
-        form.setPosition(150, 600);
+        form.setPosition(150, 640);
+
+        // Fermer le programme
         form.addButton("FERMER", "Quitter");
 
         form.setPosition(400,0);
@@ -60,6 +79,14 @@ public class GUISite implements FormulaireInt
                             "",
                             600,700);
 
+        // Affichage option calcul
+        form.setPosition(190, 105);
+        calculCheckBox = new JCheckBox("Livraison automatique");
+        JPanel panel = new JPanel();
+        panel.add(calculCheckBox);
+        form.addPanel(panel, 160, 40);
+
+        // Affichage option calcul
         // Affichage du formulaire
         form.afficher();
     }
@@ -80,15 +107,16 @@ public class GUISite implements FormulaireInt
                     form.setValeurChamp("RESULTATS",rsStock);
                     break;
                 case "AFF_COMMANDES":
+                    Boolean estCalcul = calculCheckBox.isSelected();
                     form.setValeurChamp("RESULTATS", "");
-                    String rsCommandes = site.listerToutesCommandes();
+                    String rsCommandes = site.listerToutesCommandes(estCalcul);
                     form.setValeurChamp("RESULTATS",rsCommandes);
                     break;
                 case "AFF_COMMANDE":
                     form.setValeurChamp("RESULTATS", "");
                     String numStr = form.getValeurChamp("NUM_COMMANDE");
                     int num = Integer.parseInt(numStr);
-                    String rsCommande = site.listerCommande(num);
+                    String rsCommande = site.listerCommande(num, false);
                     form.setValeurChamp("RESULTATS",rsCommande);
                     break;
                 case"AFF_LIVRER":
@@ -101,13 +129,19 @@ public class GUISite implements FormulaireInt
                         int identifiantModif = getIdentifiant(form);
                         // Si la commande n'est pas livrée
                         if (!site.getCommandes().get(identifiantModif).isLivrer()){
-                                GUIModifierCommande ihm = new GUIModifierCommande(this, site.getCommandes().get(identifiantModif), site.getStock());
+                            // Ouverture de l'ihm modification de commande
+                            GUIModifierCommande ihm = new GUIModifierCommande(this, site.getCommandes().get(identifiantModif));
                         }else{
                             JOptionPane.showMessageDialog(null, "La commande a déjà été livrée", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         }
+                        String reAffichageCommande = site.listerCommande(identifiantModif, false);
+                        form.setValeurChamp("RESULTATS",reAffichageCommande);
                     }catch (IllegalStateException e){
                         site.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
                     }catch (ArrayIndexOutOfBoundsException e){
+                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
+                        site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                    }catch (NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                     }
@@ -131,12 +165,22 @@ public class GUISite implements FormulaireInt
                         Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                     }
                     break;
+                case "LIVRER":
+                    try{
+                        int id = this.getIdentifiant(form);
+                        Commande commandeAffichee = site.getCommandes().get(id);
+                        site.calculStock(commandeAffichee);
+                        form.setValeurChamp("RESULTATS", site.listerCommande(id, false));
+                    }catch (NumberFormatException e){
+                        JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
+                        site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                    }
+                    break;
                 case "CALC_VENTE":
                     StringBuilder sb = new StringBuilder();
                     Map<Commande, List<String>> liste;
                     double prixTotal = 0;
                     for (Commande commande : site.getCommandes()){
-                        System.out.println(commande);
                         if (commande != null && commande.isLivrer()){
                             liste = afficherPrixCommande(commande);
                             prixTotal += Double.parseDouble(liste.get(commande).get(1));
@@ -152,7 +196,23 @@ public class GUISite implements FormulaireInt
                     sb.append(stringPrixTotal);
                     form.setValeurChamp("RESULTATS", sb.toString());
                     break;
+                case "AJOUT_COMMANDE":
+                    try{
+                        GUIAjouterCommande ihm = new GUIAjouterCommande(this);
+                    }catch (GUIAjouterCommandeException e){
+                        Site.logger.error(e.getMessage(), e.getCause());
+                    }
+                    break;
                 case "SAUVER":
+                    try{
+                        site.sauvegarderCommandes();
+                        site.sauvegarderStock();
+                    }catch (CommandeException e){
+                        Site.logger.fatal(e.getMessage(), e);
+                        JOptionPane.showMessageDialog(null, "Une erreur est survenue dans la sauvegarde des fichiers, merci de contacter un administrateur", "Erreur critique !", JOptionPane.INFORMATION_MESSAGE);
+                    }finally {
+                        JOptionPane.showMessageDialog(null, "Votre sauvegarde a bien été prise en compte", "Sauvegarde", JOptionPane.INFORMATION_MESSAGE);
+                    }
                     break;
                 case "FERMER":
                     form.fermer();
