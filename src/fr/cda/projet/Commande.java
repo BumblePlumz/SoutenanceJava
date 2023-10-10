@@ -78,27 +78,23 @@ public class Commande
      * @param compteur le compteur d'index des commandes
      * @return String la mise en forme
      */
-    public String formatSauvegardeCommande(Commande commande, int compteur) {
+    public String formatSauvegardeCommande(Commande commande) {
         StringBuilder sb = new StringBuilder();
-        if (commande != null){
-            for (String ref : commande.getReferences()) {
-                sb.append(commande.getNumero());
-                sb.append(";");
-                sb.append(commande.getDate());
-                sb.append(";");
-                sb.append(commande.getClient());
-                sb.append(";");
-                sb.append(ref);
-                sb.append(";");
-                if (commande.isLivrer()){
-                    sb.append("true");
-                }else{
-                    sb.append("false");
-                }
-                if (compteur < (commande.getReferences().size()-1)){
-                    sb.append("\n");
-                }
+        for (String ref : commande.getReferences()) {
+            sb.append(commande.getNumero());
+            sb.append(";");
+            sb.append(commande.getDate());
+            sb.append(";");
+            sb.append(commande.getClient());
+            sb.append(";");
+            sb.append(ref);
+            sb.append(";");
+            if (commande.isLivrer()){
+                sb.append("true");
+            }else{
+                sb.append("false");
             }
+            sb.append("\n");
         }
         return sb.toString();
     }
@@ -121,12 +117,12 @@ public class Commande
 
         // L'affichage, doit-il prendre en compte les raisons
         if (afficherRaison){
-            sb.append(formatAfficherRaison(sb));
+            formatAfficherRaison(sb);
         }
 
         // L'affichage, doit-il prendre en compte l'état livrable de la commande
         if (afficherLivrer){
-            sb.append(formatAfficherLivrer(sb));
+            formatAfficherLivrer(sb);
         }
 
         // Clotûre de l'affichage
