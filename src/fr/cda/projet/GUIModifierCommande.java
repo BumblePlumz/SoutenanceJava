@@ -20,7 +20,6 @@ public class GUIModifierCommande implements FormulaireInt {
          * Constructeur
          * @param site le site en cours d'utilisation
          * @param commande la commande en cours d'affichage
-         * @author Nguyen Nicolas
          */
     public GUIModifierCommande(GUISite site, Commande commande){
         this.formPP = site;
@@ -71,7 +70,6 @@ public class GUIModifierCommande implements FormulaireInt {
     /**
      * Ajout des valeurs inscrite par l'utilisateur dans les données en cours d'utilisation
      * @param listeValeurs input utilisateur sous forme de List<String>
-     * @author Nguyen Nicolas
      */
     private void validerStock(List<String> listeValeurs) {
         for (String valeur : listeValeurs) {

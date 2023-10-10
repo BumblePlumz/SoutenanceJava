@@ -23,6 +23,8 @@ public class Site
     public static int indexStock = 0;
     private final List<Produit> stock = new ArrayList<>();       // Les produits du stock
     private final List<Commande> commandes = new ArrayList<>();  // Les bons de commande
+    private final String stockFilePath = "src/fr/resources/Produits.txt";
+    private final String commandesFilePath= "src/fr/resources/Commandes.txt";
 
     /**
      * Constructeur
@@ -31,26 +33,20 @@ public class Site
     public Site()
     {
         try{
-            // lecture du fichier resources/Produits.txt | pour chaque ligne on créer un Produit que l'on ajoute a stock
-            initialiserStock("src/fr/resources/Produits.txt");
+            // lecture du fichier resources/Produits.txt | pour chaque ligne, on crée un Produit que l'on ajoute a stock
+            initialiserStock(stockFilePath);
 
-            // lecture du fichier resources/Commandes.txt |  pour chaque ligne on créer une Commande que l'on ajoute à commandes ou l'on ajoute la une référence d'un produit a une commande existante
-            initialiserCommandes("src/fr/resources/Commandes.txt");
+            // lecture du fichier resources/Commandes.txt | pour chaque ligne, on crée une Commande que l'on ajoute à commandes ou l'on ajoute la une référence d'un produit a une commande existante
+            initialiserCommandes(commandesFilePath);
 
             // On vérifie les commandes et génère les attributs raisons des commandes
             initialisationDesReferences();
 
-        }catch (IndexOutOfBoundsException e){
-            logger.error("Une boucle sur une collection a générée une erreur", e);
-        }catch(NullPointerException e){
+        }catch(ProduitException e){
             logger.error("Une collection n'a pas pu être chargée correctement", e);
         }catch(CommandeException e){
             logger.error(e.getMessage(), e.getCause(), e.getStackTrace());
         }
-    }
-
-    private void initialiserIndexCommande() {
-
     }
 
     public int getIndexCommande() {
@@ -69,7 +65,6 @@ public class Site
      * Chargement du fichier resources/Produits.txt
      * @param nomFichier fichier de sauvegarde des données de la classe Produit
      * @exception NullPointerException la procédure peut générer une exception
-     * @author vendor
      */
     private void initialiserStock(String nomFichier)
     {
@@ -87,10 +82,14 @@ public class Site
                                         quantite
                                         );
                 stock.add(p);
-                this.indexStock++;
+                Site.indexStock++;
             }
         }catch (NullPointerException e){
             logger.error("Une erreur est survenu dans l'initialisation des stock", e);
+            throw new ProduitException(e.getMessage(), e.getCause());
+        }catch (IndexOutOfBoundsException e){
+            logger.error("Une erreur est survenu dans l'initialisation des stock", e);
+            throw new ProduitException(e.getMessage(), e.getCause());
         }
     }
 
@@ -98,7 +97,6 @@ public class Site
      * Chargement du fichier resources/Commande.txt
      * @param nomFichier fichier de sauvegarde des données de la classe Command
      * @exception CommandeException la procédure peut générer une exception
-     * @author Nguyen Nicolas
      */
     private void initialiserCommandes(String nomFichier) {
         String[] lignes = Terminal.lireFichierTexte(nomFichier);
@@ -119,20 +117,17 @@ public class Site
             String date = champs[1];
             String client = champs[2];
             String ref = champs[3];
-            boolean livrer = false;
-            if (champs.length == 5){
-                livrer = champs[4].equals("true");
-            }
+            boolean livrer = champs[4].equals("true");
 
             // On dirige la donnée au bon endroit (Si la commande existe on ajoute sinon on créer)
             if (numero > 0 && numero < commandes.size() ){
+                // On récupère la commande pour ajouter la référence
                 Commande commande = commandes.get(numero);
                 commande.getReferences().add(ref);
             }else{
+                // On instancie une nouvelle commande
                 Commande commande = new Commande(numero, date, client);
-                if (champs.length == 5){
-                    commande.setLivrer(livrer);
-                }
+                commande.setLivrer(livrer);
                 commande.getReferences().add(ref);
                 commandes.add(commande);
                 Site.indexCommande++;
@@ -143,13 +138,12 @@ public class Site
     /**
      * Methode qui retourne sous la forme d'une chaine de caractere tous les produits du stock
      * @return retourne un toString de tous les produits
-     * @author Nguyen Nicolas
      */
     public String listerTousProduits() {
         // L'utilisation d'un stringbuilder est moins coûteuse à grande échelle.
         StringBuilder sb = new StringBuilder();
-        for(Produit prod : stock){
-            sb.append(prod.toString());
+        for(Produit produit : stock){
+            sb.append(produit.toString());
             sb.append("\n");
         }
         return sb.toString();
@@ -157,23 +151,22 @@ public class Site
 
     /**
      * Methode qui retourne sous la forme d'une chaine de caractere toutes les commandes
+     * @param calcul true si on veut faire la livraison de toute les commandes possibles dans l'ordre d'enregistrement
      * @return retourne un toString de toutes les commandes
-     * @author Nguyen Nicolas
      */
     public String listerToutesCommandes(boolean calcul)
     {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < commandes.size(); i++) {
-            if (i > 0){
-                if (calcul){
-                    // On calcul la commande pour être sur que les données raison sont à jour
-                    calculStock(commandes.get(i));
-                }else{
-                    estValide(commandes.get(i));
-                }
-                sb.append("\n");
-                sb.append(commandes.get(i).toString(true, true));
+        for (int i = 1; i < commandes.size(); i++) {
+            if (calcul){
+                // On calcule la commande pour être sûr que les données raison sont à jour
+                calculStock(commandes.get(i));
+            }else{
+                // On valide juste les commandes pour voir si les stocks sont disponibles sans les livrer
+                estValide(commandes.get(i));
             }
+            sb.append("\n");
+            sb.append(commandes.get(i).toString(true, true));
         }
         return sb.toString();
     }
@@ -192,7 +185,7 @@ public class Site
         try {
             if (numero > 0 && numero < commandes.size()){
                 if (calcul){
-                    // On calcul la commande pour être sur que les données raison sont à jour
+                    // On calcule la commande pour être sûr que les données raison sont à jour
                     calculStock(commandes.get(numero));
                 }else{
                     estValide(commandes.get(numero));
@@ -220,7 +213,7 @@ public class Site
         try{
             for (Commande commande : commandes) {
                 if (commande != null && !commande.isLivrer()){
-                    // On calcul la commande pour être sur que les données raison sont à jour
+                    // On calcule la commande pour être sûr que les données raison sont à jour
                     estValide(commande);
                     sb.append("\n");
                     sb.append(commande.toString(true, true));
@@ -234,7 +227,6 @@ public class Site
 
     /**
      * Générer les attributs raisons des commandes
-     * @author Nguyen Nicolas
      */
     public void initialisationDesReferences() {
         for (Commande commande : commandes) {
@@ -249,7 +241,6 @@ public class Site
      * @param commande Une commande spécifique
      * @exception CommandeException gestion de la corruption des données
      * @exception NumberFormatException gestion de la corruption des données
-     * @author Nguyen Nicolas
      */
     public void calculStock(Commande commande) {
         Boolean estValide = estValide(commande);
@@ -265,7 +256,6 @@ public class Site
     /**
      * Retirer les éléments référant de la commande du stock pour la livrer
      * @param commande la commande en cours de gestion
-     * @author Nguyen Nicolas
      */
     private void soustraireStock(Commande commande) {
         List<String> refs = commande.getReferences();
@@ -296,38 +286,41 @@ public class Site
     private boolean estValide(Commande commande) {
         commande.setRaison("");
         List<String> refs = commande.getReferences();
-        int compteur = 0;
-        boolean resultat = false;
+        int nombreDeReferenceDisponibleEnStock = 0;
+
         // Pour toutes les références d'une commande on vérifie l'état des stocks
         for (String ref : refs) {
             try{
                 String[] refParts = ref.split("=");
-                String reference = refParts[0];
-                int quantite = Integer.parseInt(refParts[1]);
 
                 // Vérification de la corrumption des données
                 if (refParts.length != 2) { throw new CommandeException("Une corruption de donnée s'est produite dans des références de commande", new IndexOutOfBoundsException()); }
+
+                String reference = refParts[0];
+                int quantite = Integer.parseInt(refParts[1]);
+
+                // Attribut de vérification pour savoir si un produit a été trouvé.
+                boolean referanceEnStock = false;
 
                 // Pour tous les produits
                 for (Produit produit : stock) {
                     if (produit.getReference().equals(reference)){
                         // Vérification de la disponibilité
                         if (!produit.isCalculQuantite(quantite)){
-                            formatRaison(commande, quantite, produit);
+                            formatAjoutOuNouvelleRaison(commande, quantite, produit);
                         }else{
-                            compteur++;
+                            referanceEnStock = true;
                         }
                     }
+                }
+                if (referanceEnStock){
+                    nombreDeReferenceDisponibleEnStock++;
                 }
             }catch(NumberFormatException e){
                 logger.fatal("Une erreur est survenu lors d'un calcul de stock", e);
             }
         }
-        if (compteur == commande.getReferences().size()){
-            commande.setRaison("");
-            resultat = true;
-        }
-        return resultat;
+        return nombreDeReferenceDisponibleEnStock == commande.getReferences().size();
     }
 
     /**
@@ -335,14 +328,12 @@ public class Site
      * @param commande la commande a modifier
      * @param quantite la quantite demandée
      * @param produit le produit concernant la commmande et la quantité
-     * @author Nguyen Nicolas
      */
-    private void formatRaison(Commande commande, int quantite, Produit produit) {
+    private void formatAjoutOuNouvelleRaison(Commande commande, int quantite, Produit produit) {
         StringBuilder sb = new StringBuilder();
 
         // Mise en forme de la donnée raison
-        String raison = produit.miseEnFormeRaison(quantite);
-        sb.append(raison);
+        sb.append(produit.formatStockageObjetRaison(quantite));
         sb.append(";");
 
         // Vérification pour savoir si une raison existe ou non
@@ -356,39 +347,24 @@ public class Site
     /**
      * Sauvegarder les données des commandes dans le fichier commandes.txt
      * @exception IOException Erreur dans la gestion d'un fichier
-     * @author Nguyen Nicolas
      */
     public void sauvegarderCommandes(){
         try {
             FileWriter fileWriter = new FileWriter("src/fr/resources/Commandes.txt");
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            StringBuilder sb = new StringBuilder();
+
+            // On recherche la dernière commande pour ne pas stocker de retour à la ligne.
+            int indexCommande = 0;
 
             for (Commande commande : commandes) {
-                if (commande != null){
-                    StringBuilder sb = new StringBuilder();
-                    int compteur = 0;
-                    for (String ref : commande.getReferences()) {
-                        sb.append(commande.getNumero());
-                        sb.append(";");
-                        sb.append(commande.getDate());
-                        sb.append(";");
-                        sb.append(commande.getClient());
-                        sb.append(";");
-                        sb.append(ref);
-                        sb.append(";");
-                        if (commande.isLivrer()){
-                            sb.append("true");
-                        }else{
-                            sb.append("false");
-                        }
-                        if (compteur < (commande.getReferences().size()-1)){
-                            sb.append("\n");
-                        }
-                        compteur++;
-                    }
-                    bufferedWriter.write(sb.toString());
-                    bufferedWriter.newLine();
+                String c = commande.formatSauvegardeCommande(commande, indexCommande);
+                if (!c.isEmpty()){
+                    sb.append(c);
                 }
+                indexCommande++;
+                bufferedWriter.write(sb.toString());
+                bufferedWriter.newLine();
             }
             bufferedWriter.close();
         }catch (IOException e){
@@ -399,29 +375,23 @@ public class Site
     /**
      * Sauvegarde des données du stock
      * @exception IOException Erreur dans la gestion d'un fichier
-     * @author Nguyen Nicolas
      */
     public void sauvegarderStock(){
         try {
             FileWriter fileWriter = new FileWriter("src/fr/resources/Produits.txt");
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            StringBuilder sb = new StringBuilder();
 
             for (Produit produit : stock) {
-                StringBuilder sb = new StringBuilder();
-                sb.append(produit.getReference());
-                sb.append(";");
-                sb.append(produit.getNom());
-                sb.append(";");
-                sb.append(produit.getPrix());
-                sb.append(";");
-                sb.append(produit.getQuantite());
-
-                bufferedWriter.write(sb.toString());
-                bufferedWriter.newLine();
+                sb.append(produit.formatSauvegardeProduit());
             }
+
+            bufferedWriter.write(sb.toString());
+            bufferedWriter.newLine();
             bufferedWriter.close();
         }catch (IOException e){
             throw new CommandeException(e.getMessage(), e.getCause());
         }
     }
+
 }

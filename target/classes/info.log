@@ -1194,3 +1194,11 @@ java.lang.NullPointerException: Cannot read the array length because "<local3>" 
 22:57:01 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
 22:57:01 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
 22:57:01 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:57:49 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+18:56:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+18:57:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+19:15:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+19:15:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:03:45 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:04:15 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:04:33 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande

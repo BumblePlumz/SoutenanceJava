@@ -9,5 +9,8 @@
         <module name="soutenance" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="doc" target="20" />
+    </bytecodeTargetLevel>
   </component>
 </project>

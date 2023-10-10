@@ -1,15 +1,9 @@
 package projet;
 
 import ihm.*;
-import util.Terminal;
 
 import javax.swing.*;
-import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
-
-// Classe de definition de l'IHM principale du compte
-//
 
 /**
  * Classe de définition de l'IHM principale du compte
@@ -19,7 +13,7 @@ import java.util.*;
  */
 public class GUISite implements FormulaireInt
 {
-    // Protected permet l'accès au méthode de site dans les enfants donc les fenêtres de modifications
+    // Protected permet l'accès aux méthodes de site dans les enfants donc les fenêtres de modifications
     protected Site site;
     // Formulaire placé en attribut pour l'accès des enfants à celui-ci et l'actualisation des affichages
     protected Formulaire form = new Formulaire("Site de vente",this,1100,730);
@@ -28,7 +22,6 @@ public class GUISite implements FormulaireInt
     /**
      * Constructeur de l'ihm GUISite
      * @param site le site qui va servir de controleur pour les données de l'affichage
-     * @author vendor & Nguyen Nicolas
      */
     public GUISite(Site site)
     {
@@ -73,20 +66,19 @@ public class GUISite implements FormulaireInt
         // Fermer le programme
         form.addButton("FERMER", "Quitter");
 
-        form.setPosition(400,0);
-        form.addZoneText("RESULTATS","Resultats",
-                            true,
-                            "",
-                            600,700);
-
-        // Affichage option calcul
+        // Affichage livraison automatique
         form.setPosition(190, 105);
         calculCheckBox = new JCheckBox("Livraison automatique");
         JPanel panel = new JPanel();
         panel.add(calculCheckBox);
         form.addPanel(panel, 160, 40);
 
-        // Affichage option calcul
+        form.setPosition(400,0);
+        form.addZoneText("RESULTATS","Resultats",
+                            false,
+                            "",
+                            600,700);
+
         // Affichage du formulaire
         form.afficher();
     }
@@ -107,9 +99,9 @@ public class GUISite implements FormulaireInt
                     form.setValeurChamp("RESULTATS",rsStock);
                     break;
                 case "AFF_COMMANDES":
-                    Boolean estCalcul = calculCheckBox.isSelected();
+                    Boolean livraisonAutomatiqueOnOff = calculCheckBox.isSelected();
                     form.setValeurChamp("RESULTATS", "");
-                    String rsCommandes = site.listerToutesCommandes(estCalcul);
+                    String rsCommandes = site.listerToutesCommandes(livraisonAutomatiqueOnOff);
                     form.setValeurChamp("RESULTATS",rsCommandes);
                     break;
                 case "AFF_COMMANDE":
@@ -130,20 +122,23 @@ public class GUISite implements FormulaireInt
                         // Si la commande n'est pas livrée
                         if (!site.getCommandes().get(identifiantModif).isLivrer()){
                             // Ouverture de l'ihm modification de commande
-                            GUIModifierCommande ihm = new GUIModifierCommande(this, site.getCommandes().get(identifiantModif));
+                            new GUIModifierCommande(this, site.getCommandes().get(identifiantModif));
                         }else{
                             JOptionPane.showMessageDialog(null, "La commande a déjà été livrée", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         }
                         String reAffichageCommande = site.listerCommande(identifiantModif, false);
                         form.setValeurChamp("RESULTATS",reAffichageCommande);
                     }catch (IllegalStateException e){
-                        site.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
+                        Site.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch (ArrayIndexOutOfBoundsException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch (NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
                 case "CALC_COMMANDE":
@@ -160,9 +155,11 @@ public class GUISite implements FormulaireInt
                     }catch (ArrayIndexOutOfBoundsException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch(NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
                         Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
                 case "LIVRER":
@@ -173,7 +170,8 @@ public class GUISite implements FormulaireInt
                         form.setValeurChamp("RESULTATS", site.listerCommande(id, false));
                     }catch (NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
                 case "CALC_VENTE":
@@ -198,7 +196,7 @@ public class GUISite implements FormulaireInt
                     break;
                 case "AJOUT_COMMANDE":
                     try{
-                        GUIAjouterCommande ihm = new GUIAjouterCommande(this);
+                        new GUIAjouterCommande(this);
                     }catch (GUIAjouterCommandeException e){
                         Site.logger.error(e.getMessage(), e.getCause());
                     }
@@ -218,10 +216,10 @@ public class GUISite implements FormulaireInt
                     form.fermer();
                     break;
                 default:
-                    throw new IllegalArgumentException("Erreur critique merci de relancer le programme");
+                    throw new GUISiteException("Erreur critique action non autorisée", new IllegalArgumentException());
             }
-        }catch (IllegalStateException e){
-            Site.logger.fatal(e.getMessage(), e);
+        }catch (GUISiteException e){
+            Site.logger.fatal(e.getMessage(), e.getCause());
         }
     }
 
@@ -229,7 +227,6 @@ public class GUISite implements FormulaireInt
      * Récupérer l'affichage des prix d'une commande
      * @param commande La commande traitée
      * @return map<Commande, List<String>> Pour la liste 0 : récupère l'affichage en String | 1 : récupère le prix total de la commande
-     * @author Nguyen Nicolas
      */
     private Map<Commande, List<String>> afficherPrixCommande(Commande commande) {
         // Attributs
@@ -280,14 +277,12 @@ public class GUISite implements FormulaireInt
      * Retourne l'identifiant de la commande en cours d'affichage
      * @param form formulaire actuellement affiché
      * @return int retourne l'identifiant de la commande affichée
-     * @author Nguyen Nicolas
      */
     private int getIdentifiant(Formulaire form) {
         String commande = form.getValeurChamp("RESULTATS");
         String[] parties = commande.split(":");
         String[] partie = parties[1].split(" ");
-        int identifiant = Integer.parseInt(partie[1].trim());
-        return identifiant;
+        return Integer.parseInt(partie[1].trim());
     }
 
 }

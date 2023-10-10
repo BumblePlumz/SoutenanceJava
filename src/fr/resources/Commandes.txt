@@ -18,3 +18,6 @@
 8;25/09/2022;Trudeau Justin;VETEMENT-1=4;false
 9;26/09/2022;Morrison Scott;BD-2=7;false
 10;26/09/2022;Abe Shinzo;BD-3=3;true
+11;NOM prenom;10-10-2023;LIVRE-2=4;false
+11;NOM prenom;10-10-2023;LIVRE-3=4;false
+11;NOM prenom;10-10-2023;LIVRE-4=6;false

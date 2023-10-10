@@ -22,7 +22,6 @@ public class GUIAjouterCommande implements FormulaireInt {
     /**
      * Constructeur
      * @param formPP le site en cours d'utilisation
-     * @author Nguyen Nicolas
      */
     public GUIAjouterCommande(GUISite formPP) {
         this.formPP = formPP;
@@ -128,12 +127,10 @@ public class GUIAjouterCommande implements FormulaireInt {
 
                     // Vérification que les champs sont remplis
                     if (!leClient.isEmpty() && bonDeCommande.length != 0){
-                        List<String> resultat = new ArrayList<>();
-
-                        // On fait une liste des références et de leurs quantitées
-                        for (int i = 0; i < formatBonDeCommande.length; i++) {
-                            resultat.add(formatBonDeCommande[i]);
-                        }
+                        // On créer une vue du tableau sachant qu'on n'a pas besoin de le modifier (se rapproche d'un cast)
+                        // On stock l'adresse de la mémoire dans une nouvelle ArrayList cela permet de lier un tableau et un array qui seront liés lors de la modification.
+                        // Comme on ne modifie pas les données cela économise le coup d'une nouvelle ArrayList.
+                        List<String> resultat = Arrays.asList(formatBonDeCommande);
 
                         // On met en forme la date actuelle
                         LocalDate dateActuelle = LocalDate.now();
@@ -161,7 +158,6 @@ public class GUIAjouterCommande implements FormulaireInt {
      * Mise en forme des données pour le programme
      * @param bonDeCommande tableau de donnée contenant référence et quantitée
      * @return String[] format de stockage de donnée REF=QUANTITE
-     * @author Nguyen Nicolas
      */
     private String[] miseEnFormeReference(String[] bonDeCommande) {
         String[] rs = new String[bonDeCommande.length];
@@ -178,7 +174,6 @@ public class GUIAjouterCommande implements FormulaireInt {
      * @param ref référence d'un produit
      * @param quantite quantité d'un produit
      * @return StringBuilder référence et quantité mise en forme
-     * @author Nguyen Nicolas
      */
     private StringBuilder miseEnFormeAffichage(String ref, String quantite){
         StringBuilder sb = new StringBuilder();

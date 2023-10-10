@@ -11,19 +11,19 @@ import util.Calcul;
 public class Produit
 {
     // Les caracteristiques d'un Produit
-    //
     private String  reference;      // reference du produit
     private String  nom;            // nom du produit
     private double  prix;           // prix du produit
     private int     quantite;       // quantité du produit
 
-    // Constructeur
-    //
-    public Produit(String reference,
-                   String nom,
-                   double prix,
-                   int quantite)
-    {
+    /**
+     * Constructeur d'un produit
+     * @param reference la référence du produit
+     * @param nom le nom du produit
+     * @param prix le prix du produit
+     * @param quantite la quantité du produit en stock
+     */
+    public Produit(String reference, String nom, double prix, int quantite) {
         this.reference = reference;
         this.nom = nom;
         this.prix = prix;
@@ -46,10 +46,6 @@ public class Produit
         return reference;
     }
 
-    public void ajoutQuantite(int quantite){
-        this.quantite += quantite;
-    }
-
     /**
      * Savoir si une quantitée est retirable du stock
      * @param nombre quantitée à retirer
@@ -60,6 +56,14 @@ public class Produit
     }
 
     /**
+     * Ajouter une quantitée de produit au stock
+     * @param quantite quantitée à ajouter au stock
+     */
+    public void ajoutQuantite(int quantite){
+        this.quantite += quantite;
+    }
+
+    /**
      * Retirer une quantitée de produit du stock
      * @param nombre quantitée à retirer du stock
      */
@@ -67,12 +71,23 @@ public class Produit
         this.quantite -= nombre;
     }
 
+    public StringBuilder formatSauvegardeProduit() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.getReference());
+        sb.append(";");
+        sb.append(this.getNom());
+        sb.append(";");
+        sb.append(this.getPrix());
+        sb.append(";");
+        sb.append(this.getQuantite());
+        return sb;
+    }
     /**
      * Mise en forme par le calcul de la donnée au format REF=X
      * @param quantiteLivrable la quantité demandée
      * @return un String qui affiche les quantités manquantes
      */
-    public String miseEnFormeRaison(int quantiteLivrable){
+    public String formatStockageObjetRaison(int quantiteLivrable){
         return reference+"="+Calcul.soustraction(quantite, quantiteLivrable, true);
     }
 
