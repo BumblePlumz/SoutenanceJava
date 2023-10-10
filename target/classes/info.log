@@ -1,0 +1,1204 @@
+21:58:23.095 [AWT-EventQueue-0] INFO  projet.Site - Une recherche hors champs a ï¿½tï¿½ dï¿½tectï¿½e
+22:01:05.352 [main] ERROR projet.Site - Une collection n'a pas pu ï¿½tre chargï¿½e correctement
+java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at projet.Site.initialiserStock(Site.java:107)
+	at projet.Site.<init>(Site.java:32)
+	at projet.Projet.main(Projet.java:30)
+22:06:20.436 [main] ERROR projet.Site - Une collection n'a pas pu ï¿½tre chargï¿½e correctement
+java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at projet.Site.initialiserStock(Site.java:107)
+	at projet.Site.<init>(Site.java:32)
+	at projet.Projet.main(Projet.java:30)
+
+01:07:40.591 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:07:40.595 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.419 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:29.422 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.730 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:10:48.733 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:10:48.734 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.921 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:11:34.924 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.924 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.925 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:11:34.925 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.528 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:21:47.531 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.209 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:26.213 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.578 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:24:47.581 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.581 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.582 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:24:47.582 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.797 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:25:07.801 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:26:57.079 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.001 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:29:02.004 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.978 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:18.981 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.777 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:30:44.781 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.147 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:16.151 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.810 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:31:43.813 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.102 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:32:00.105 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:00.106 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.980 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:32:45.983 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.757 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.760 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:03.761 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.918 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:33:38.921 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.383 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:34:24.387 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.929 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:37:16.933 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.162 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:28.165 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.009 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:39:54.012 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.012 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.013 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:39:54.013 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.563 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:08.567 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:40:20.194 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.751 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.754 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:45:31.755 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.871 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:16.875 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.964 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:46:38.967 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.967 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.968 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:46:38.968 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.815 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:04.818 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.661 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:28.665 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.791 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:47:42.794 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.794 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.795 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:47:42.795 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.599 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:48:11.603 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.882 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:52:45.885 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.571 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:57:09.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:09.575 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.826 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:57:42.829 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.571 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.574 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:11.575 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.731 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:31.734 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.045 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+01:58:44.048 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.909 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:41:09.913 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.814 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:42:01.817 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.962 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:28.965 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.447 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:43:50.450 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.356 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:02.361 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.910 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:44:18.913 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.287 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:46:29.291 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.659 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:49:14.663 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.421 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:50:27.424 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.892 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:51:32.896 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.953 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:09.956 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.210 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:52:37.213 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.534 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:56:23.538 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:23.539 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.561 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+13:56:44.564 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.124 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:19:51.128 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.075 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:21:14.079 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.407 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:55:54.411 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.046 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.049 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+14:56:53.050 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.447 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:13.449 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.059 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:05:55.062 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.795 [main] INFO  projet.Site - La commande : 1 a ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 2 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 3 n'a pas ï¿½tï¿½ validï¿½e
+
+15:12:54.799 [main] INFO  projet.Site - La commande : 4 n'a pas ï¿½tï¿½ validï¿½e
+
+
+
+22:55:00 [main] INFO  projet.Projet - Ceci est un message d'information.
+22:55:00 [main] ERROR projet.Projet - Ceci est un message d'erreur.
+22:55:13 [main] INFO  projet.Projet - Ceci est un message d'information.
+22:55:13 [main] ERROR projet.Projet - Ceci est un message d'erreur.
+22:58:20 [main] INFO  info - Ceci est un message d'information.
+22:59:26 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+22:59:26 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+22:59:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+22:59:26 [main] INFO  info - La commande : 1 a été validée
+22:59:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+22:59:26 [main] INFO  info - La commande : 2 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 2 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 3 n'a pas été validée
+22:59:26 [main] INFO  info - La commande : 4 n'a pas été validée
+23:01:00 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:01:00 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:01:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:01:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:11:30 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:11:30 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:11:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:11:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:12:12 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:12:12 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:12:12 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:12:12 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:13:32 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:13:32 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:13:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:13:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:19:08 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:19:08 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:19:08 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:19:08 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:20:07 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:20:07 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:20:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:20:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:24:35 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:24:35 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:24:35 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:24:35 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:24:41 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+23:24:45 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:24:45 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:25:12 [AWT-EventQueue-0] INFO  info - Modification commande : 3 | Retiré du stock : 8 LIVRE-1
+23:26:53 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:26:53 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:26:53 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:26:53 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:26:58 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:26:58 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:27:27 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:27:27 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:27:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:27:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:27:31 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:27:31 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+23:27:40 [AWT-EventQueue-0] INFO  info - Modification commande : 3 | Retiré du stock : 8 LIVRE-1
+23:33:37 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:33:37 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:33:37 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:33:37 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:34:16 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:34:16 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:34:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:34:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:34:34 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:34:34 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:34:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:34:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:35:07 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+23:35:07 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+23:35:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+23:35:07 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+23:35:38 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+23:35:38 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+00:07:11 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:07:11 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:07:11 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:07:11 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:07:46 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:07:46 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:07:46 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:07:46 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:08:18 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:08:18 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:08:18 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:08:18 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:06 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:06 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:06 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:06 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:27 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:27 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:27 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:09:39 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:09:39 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:09:39 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:09:39 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:12:19 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:12:19 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:12:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:12:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:12:44 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:12:44 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:12:44 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:12:44 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:14:28 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:14:28 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:14:28 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:14:28 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:14:34 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:14:34 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:14:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:14:34 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:18:16 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:18:16 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:18:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:18:16 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:20:30 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+00:20:30 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+00:20:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+00:20:30 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+00:20:34 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+00:20:34 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+02:36:19 [main] INFO  info - Ceci est un message d'information.
+02:36:42 [main] INFO  info - Ceci est un message d'information.
+02:36:45 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+02:36:50 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+02:36:54 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+02:37:21 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+02:37:21 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+02:37:21 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+02:37:21 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+02:37:21 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+02:37:22 [main] INFO  info - Ceci est un message d'information.
+02:37:23 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:37:23 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+02:37:23 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+02:37:29 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+02:37:29 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+02:37:29 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+02:40:16 [main] INFO  info - Ceci est un message d'information.
+02:41:56 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+02:41:57 [main] INFO  info - Ceci est un message d'information.
+02:41:58 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:41:59 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:42:11 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:45:26 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+02:45:26 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+02:45:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+02:45:26 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+02:45:26 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+02:45:27 [main] INFO  info - Ceci est un message d'information.
+02:45:28 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:45:28 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+02:46:22 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+02:46:22 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+02:46:22 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+02:46:22 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+02:46:22 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+02:46:23 [main] INFO  info - Ceci est un message d'information.
+02:46:27 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:46:27 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+02:46:27 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+02:46:33 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:46:37 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+02:46:37 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+02:46:37 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+02:46:44 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:47:52 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:48:15 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:49:19 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+02:49:19 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+02:49:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+02:49:19 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+02:49:19 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+02:49:19 [main] INFO  info - Ceci est un message d'information.
+02:49:21 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+02:49:21 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+02:49:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+02:49:21 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+02:49:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+02:49:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+02:49:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+02:49:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:32 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+15:35:32 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:32 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:32 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:32 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:32 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+15:35:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+15:35:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+15:35:54 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+15:35:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:35:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:49:58 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+15:49:58 [main] INFO  info - Ceci est un message d'information.
+15:50:00 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+15:50:00 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:50:00 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:50:00 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:50:00 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+15:50:00 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:13:39 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:13:39 [main] INFO  info - Ceci est un message d'information.
+16:29:14 [AWT-EventQueue-0] INFO  info - Une recherche hors champs a été détectée
+16:48:35 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:48:37 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:48:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:48:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:48:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:48:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:48:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:24 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:49:24 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:49:24 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:49:24 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:49:24 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:49:28 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:49:28 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+16:49:28 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:28 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+16:49:28 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:28 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:28 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:28 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:49:38 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:49:43 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:49:43 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:49:43 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+16:52:21 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:52:21 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:52:21 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:52:21 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:52:21 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:52:22 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:52:22 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+16:52:27 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:52:27 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:52:27 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+16:53:31 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:53:31 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:53:31 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:53:31 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:53:31 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:53:33 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:53:33 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+16:53:37 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:53:40 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:53:40 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:53:40 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+16:56:56 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:56:56 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:56:56 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:56:56 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:56:56 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:56:59 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:56:59 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+16:56:59 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:56:59 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:56:59 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+16:56:59 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:56:59 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:56:59 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:56:59 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+16:57:06 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+16:57:19 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:57:19 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:57:19 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+16:57:32 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:57:32 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:57:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:57:32 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:57:32 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:57:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:57:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:57:49 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+16:58:00 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+16:58:00 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+16:58:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+16:58:00 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+16:58:00 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+16:58:12 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 3 VETEMENT-2
+16:58:12 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+16:58:12 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+17:01:48 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:01:48 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+17:01:50 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:01:52 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:02:12 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:02:12 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:02:12 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:02:13 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:02:13 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:02:13 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:02:13 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:02:13 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:02:13 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:09:05 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:09:05 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:09:05 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:09:08 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:09:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:09:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:09:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:09:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:09:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:12:23 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:12:23 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:12:23 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:14:10 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:14:10 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:14:10 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:14:13 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:14:13 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:14:13 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:14:16 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:14:16 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:14:16 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:14:16 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:14:16 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:14:16 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:14:19 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:15:54 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:15:54 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:15:54 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:16:10 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:16:10 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:16:10 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:18:29 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:18:29 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:18:29 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:18:57 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:18:57 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:18:57 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:22:55 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:22:56 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:22:58 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:22:58 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+17:22:58 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:22:58 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:22:58 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:22:58 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:22:58 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:06 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:23:06 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:06 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:06 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:06 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:06 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:20 [AWT-EventQueue-0] INFO  info - Modification commande : 3 | Retiré du stock : 8 LIVRE-1
+17:23:27 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:27 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:27 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:27 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:23:27 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:24:43 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:24:43 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:24:43 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:24:43 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:24:43 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:27:50 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:27:50 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:27:50 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+17:27:50 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+17:27:50 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:28:47 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:28:47 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:28:47 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:33:44 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:34:01 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:37:10 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:37:43 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:37:43 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:37:43 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+17:37:43 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+17:37:43 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:37:44 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:37:44 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-2
+17:37:44 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+17:37:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:37:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:37:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:37:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:38:31 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:38:31 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:38:31 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:38:31 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+17:41:48 [main] INFO  info - Retiré du stock : 5 VETEMENT-4
+17:41:48 [main] INFO  info - Retiré du stock : 6 VETEMENT-5
+17:41:48 [main] INFO  info - Retiré du stock : 3 LIVRE-3
+17:41:50 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:41:54 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:09 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:09 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:44:09 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+17:44:09 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+17:44:09 [main] INFO  info - Retiré du stock : 5 VETEMENT-4
+17:44:09 [main] INFO  info - Retiré du stock : 6 VETEMENT-5
+17:44:09 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:44:09 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:44:15 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:15 [AWT-EventQueue-0] INFO  info - Retiré du stock : 5 VETEMENT-4
+17:44:15 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+17:44:33 [main] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:33 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:44:33 [main] INFO  info - Retiré du stock : 3 VETEMENT-1
+17:44:33 [main] INFO  info - Retiré du stock : 3 VETEMENT-2
+17:44:33 [main] INFO  info - Retiré du stock : 5 VETEMENT-4
+17:44:33 [main] INFO  info - Retiré du stock : 6 VETEMENT-5
+17:44:33 [main] INFO  info - Retiré du stock : 2 LIVRE-4
+17:44:33 [main] INFO  info - Retiré du stock : 2 LIVRE-2
+17:44:33 [main] INFO  info - Retiré du stock : 3 BD-3
+17:44:37 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:37 [AWT-EventQueue-0] INFO  info - Retiré du stock : 5 VETEMENT-4
+17:44:37 [AWT-EventQueue-0] INFO  info - Retiré du stock : 2 LIVRE-4
+17:44:45 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:44:52 [AWT-EventQueue-0] INFO  info - Retiré du stock : 1 LIVRE-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 LIVRE-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 LIVRE-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 LIVRE-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 LIVRE-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 LIVRE-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 BD-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 BD-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 1 BD-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 LIVRE-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 LIVRE-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 LIVRE-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 LIVRE-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 LIVRE-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 BD-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 BD-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 2 BD-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 LIVRE-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 LIVRE-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 LIVRE-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 LIVRE-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 LIVRE-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-3
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-4
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-5
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 BD-1
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 BD-2
+17:57:39 [main] INFO  info - 	Retiré du stock : 3 BD-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 LIVRE-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 LIVRE-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 LIVRE-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 LIVRE-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 LIVRE-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 VETEMENT-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 BD-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 BD-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 1 BD-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 LIVRE-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 LIVRE-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 LIVRE-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 LIVRE-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 LIVRE-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 VETEMENT-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 BD-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 BD-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 2 BD-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 LIVRE-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 LIVRE-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 LIVRE-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 LIVRE-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 LIVRE-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-3
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-4
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-5
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 BD-1
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 BD-2
+17:59:05 [main] INFO  info - 	Retiré du stock : 3 BD-3
+17:59:50 [main] INFO  info - 	Retiré du stock : 1 LIVRE-1
+17:59:50 [main] INFO  info - 	Retiré du stock : 2 LIVRE-2
+17:59:50 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-1
+17:59:50 [main] INFO  info - 	Retiré du stock : 3 BD-3
+18:00:15 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 VETEMENT-3
+18:00:15 [AWT-EventQueue-0] INFO  info - Modification commande : 2 | Retiré du stock : 7 LIVRE-3
+18:00:26 [main] INFO  info - 	Retiré du stock : 1 LIVRE-1
+18:00:26 [main] INFO  info - 	Retiré du stock : 2 LIVRE-2
+18:00:26 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-1
+18:00:26 [main] INFO  info - 	Retiré du stock : 3 BD-3
+18:03:45 [main] INFO  info - 	Retiré du stock : 1 LIVRE-1
+18:03:45 [main] INFO  info - 	Retiré du stock : 2 LIVRE-2
+18:03:45 [main] INFO  info - 	Retiré du stock : 3 VETEMENT-1
+18:03:45 [main] INFO  info - 	Retiré du stock : 3 BD-3
+18:03:54 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 3 VETEMENT-2
+18:03:54 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 7 VETEMENT-3
+18:03:54 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 7 LIVRE-3
+18:07:19 [AWT-EventQueue-0] INFO  info - Commande : 3 validée. 
+
+18:07:19 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+18:09:06 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
+18:09:06 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
+18:09:06 [AWT-EventQueue-0] INFO  info - --------------------------------------------------------------------------------------------------------------
+18:09:09 [AWT-EventQueue-0] INFO  info - Commande : 5 validée.
+18:09:09 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 4 LIVRE-2
+18:09:09 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 5 VETEMENT-4
+18:09:09 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 6 VETEMENT-5
+18:09:09 [AWT-EventQueue-0] INFO  info - --------------------------------------------------------------------------------------------------------------
+18:49:58 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+18:49:58 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+18:49:58 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+19:06:55 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+19:06:55 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+19:06:55 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+19:07:05 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
+19:07:05 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
+19:07:05 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+19:07:41 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
+19:07:41 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
+19:07:41 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+21:40:42 [AWT-EventQueue-0] INFO  info - Commande : 10 validée.
+21:40:42 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+21:41:32 [AWT-EventQueue-0] INFO  info - Commande : 11 validée.
+21:41:32 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+21:41:39 [AWT-EventQueue-0] INFO  info - Commande : 11 validée.
+21:41:39 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+21:41:46 [AWT-EventQueue-0] INFO  info - Commande : 11 validée.
+21:41:46 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+21:41:47 [AWT-EventQueue-0] INFO  info - Commande : 11 validée.
+21:41:47 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:00:15 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+22:00:15 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+22:00:15 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:23:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:23:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:23:11 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:23:11 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:23:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:23:47 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+22:23:47 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+22:23:47 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:25:17 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:25:22 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:25:26 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:01 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:05 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:05 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:25 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:25 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:26 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:28:34 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+22:28:34 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+22:28:34 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:39:29 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:39:30 [AWT-EventQueue-0] INFO  info - Commande : 3 validée.
+22:39:30 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 8 LIVRE-1
+22:39:30 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:39:37 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:39:45 [main] INFO  info - Commande : 4 validée.
+22:39:45 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:39:45 [main] INFO  info - -------------------------------------------------------
+22:40:53 [main] INFO  info - Commande : 4 validée.
+22:40:53 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:40:53 [main] INFO  info - -------------------------------------------------------
+22:45:59 [main] INFO  info - Commande : 4 validée.
+22:45:59 [main] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:45:59 [main] INFO  info - -------------------------------------------------------
+22:52:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:55:39 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:55:44 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:04 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:04 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:56:54 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+22:57:01 [AWT-EventQueue-0] INFO  info - Commande : 4 validée.
+22:57:01 [AWT-EventQueue-0] INFO  info - 	Retiré du stock : 9 LIVRE-1
+22:57:01 [AWT-EventQueue-0] INFO  info - -------------------------------------------------------
+22:57:49 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+18:56:08 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+18:57:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+19:15:03 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+19:15:21 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:03:45 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:04:15 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande
+20:04:33 [AWT-EventQueue-0] INFO  info - Une erreur s'est produite dans la mise en forme des raisons d'une commande

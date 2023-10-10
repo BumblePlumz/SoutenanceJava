@@ -8,17 +8,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Formulaire de modification des stocks par le biais d'une commande
+ * @author Nguyen Nicolas
+ * @version 1.00
  */
 public class GUIModifierCommande implements FormulaireInt {
     private GUISite formPP;
     private Commande commande;
-    private List<Produit> stock;
 
-    public GUIModifierCommande(GUISite site, Commande commande, List<Produit> stock){
+        /**
+         * Constructeur
+         * @param site le site en cours d'utilisation
+         * @param commande la commande en cours d'affichage
+         */
+    public GUIModifierCommande(GUISite site, Commande commande){
         this.formPP = site;
         this.commande = commande;
-        this.stock = stock;
 
         Formulaire form = new Formulaire("Formulaire de modification des stocks",this,400,300);
 
@@ -35,7 +40,7 @@ public class GUIModifierCommande implements FormulaireInt {
             String[]donnees = raison.split("=");
             String label = "Il manque "+donnees[1]+" "+donnees[0]+" : ";
 
-            // Mise en forme du texte pour l'affichage
+            // Mise en forme du texte pour l'affichage en ajoutant des espaces
             for (int i = 0; i < 30; i++) {
                 if (label.length() < 30){
                     label += " ";
@@ -45,54 +50,79 @@ public class GUIModifierCommande implements FormulaireInt {
         }
 
         // Affichage du bouton de validation
-        form.setPosition(80, 150);
+        form.setPosition(60, 175);
         form.addButton("SUBMIT", "Valider les changements de stock");
-        form.setPosition(20, 175);
-        form.addLabel("*La commande sera automatiquement livré");
-        form.addLabel(" si les stocks sont suffisant");
+
+        // Annotation
+        // Décommenté si le calcul de stock est automatique
+//        form.setPosition(20, 175);
+//        form.addLabel("*La commande sera automatiquement livré");
+//        form.addLabel(" si les stocks sont suffisant");
         form.setPosition(150,225);
+
+        // Bouton Fermer
         form.addButton("FERMER", "Fermer");
+
+        // Générer l'affichage
         form.afficher();
     }
 
-    @Override
-    public void submit(Formulaire form, String nom) {
-        switch(nom){
-            case "SUBMIT":
-                // on récupère les valeurs des champs au nombre indéfini
-                String[] raisons = commande.getRaison().split(";");
-                List<String> listeValeurs = new ArrayList<>();
-                for (String raison : raisons) {
-                    String[] donnees = raison.split("=");
-                    listeValeurs.add(donnees[0]+"="+form.getValeurChamp(donnees[0]));
-                }
-                // Validation de la modification des stock
-                this.validerStock(listeValeurs);
-                break;
-            case "FERMER":
-                form.fermer();
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Une erreur est survenu votre action n'a pas été enregistrée", "Erreur", JOptionPane.INFORMATION_MESSAGE);
-                throw new IllegalStateException("Valeur inattendue : " + nom);
-        }
-        form.fermer();
-    }
-
+    /**
+     * Ajout des valeurs inscrite par l'utilisateur dans les données en cours d'utilisation
+     * @param listeValeurs input utilisateur sous forme de List<String>
+     */
     private void validerStock(List<String> listeValeurs) {
         for (String valeur : listeValeurs) {
             String[] donnees = valeur.split("=");
-            for (Produit produit : stock){
+            for (Produit produit : formPP.site.getStock()){
                 if (produit.getReference().equals(donnees[0])){
                     produit.ajoutQuantite(Integer.parseInt(donnees[1]));
                 }
             }
         }
+        // Décommenter pour faire le calcul de stock automatiquement
+//        try{
+//            // Recalcul des stocks
+//            formPP.site.calculStock(commande);
+//        }catch (CommandeException e){
+//            formPP.site.logger.error("Une erreur est survenu dans la recalculation des stocks ", e);
+//        }
+    }
+
+    /**
+     * EventListener sur le bouton submit
+     * @param form Le formulaire dans lequel se trouve le bouton
+     * @param nom Le nom du bouton qui a �t� utilis�.
+     */
+    @Override
+    public void submit(Formulaire form, String nom) {
         try{
-            formPP.site.reCalculerStock(commande);
-        }catch (CommandeException e){
-            formPP.site.logger.error("Une erreur est survenu dans la recalculation des stocks ", e);
+            switch(nom){
+                case "SUBMIT":
+                    // on récupère les valeurs des champs au nombre indéfini
+                    String[] raisons = commande.getRaison().split(";");
+                    List<String> listeValeurs = new ArrayList<>();
+                    for (String raison : raisons) {
+                        String[] donnees = raison.split("=");
+                        listeValeurs.add(donnees[0]+"="+form.getValeurChamp(donnees[0]));
+                    }
+                    // Validation de la modification des stock
+                    this.validerStock(listeValeurs);
+
+                    JOptionPane.showMessageDialog(null, "Les valeurs entrées ont bien été ajoutées au stock", "Confirmation", JOptionPane.INFORMATION_MESSAGE);
+                    break;
+                case "FERMER":
+                    form.fermer();
+                    break;
+                default:
+                    throw new IllegalStateException("Valeur inattendue : " + nom);
+            }
+            formPP.form.setValeurChamp("RESULTATS", "");
+            formPP.form.setValeurChamp("RESULTATS", formPP.site.listerCommande(commande.getNumero(), false));
+            form.fermer();
+        }catch (IllegalStateException e){
+            Site.logger.error("Une erreur critique est survenu dans l'écoute des boutons du formulaire de modification");
+            JOptionPane.showMessageDialog(null, "Une erreur est survenu votre action n'a pas été enregistrée", "Erreur critique", JOptionPane.INFORMATION_MESSAGE);
         }
-        // Recalcul des stocks
     }
 }
