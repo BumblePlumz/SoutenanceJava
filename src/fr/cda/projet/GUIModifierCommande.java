@@ -53,14 +53,8 @@ public class GUIModifierCommande implements FormulaireInt {
         form.setPosition(60, 175);
         form.addButton("SUBMIT", "Valider les changements de stock");
 
-        // Annotation
-        // Décommenté si le calcul de stock est automatique
-//        form.setPosition(20, 175);
-//        form.addLabel("*La commande sera automatiquement livré");
-//        form.addLabel(" si les stocks sont suffisant");
+        // Affichage du bouton fermer
         form.setPosition(150,225);
-
-        // Bouton Fermer
         form.addButton("FERMER", "Fermer");
 
         // Générer l'affichage
@@ -80,13 +74,6 @@ public class GUIModifierCommande implements FormulaireInt {
                 }
             }
         }
-        // Décommenter pour faire le calcul de stock automatiquement
-//        try{
-//            // Recalcul des stocks
-//            formPP.site.calculStock(commande);
-//        }catch (CommandeException e){
-//            formPP.site.logger.error("Une erreur est survenu dans la recalculation des stocks ", e);
-//        }
     }
 
     /**
