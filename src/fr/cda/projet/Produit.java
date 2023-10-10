@@ -71,8 +71,7 @@ public class Produit
         this.quantite -= nombre;
     }
 
-    public StringBuilder formatSauvegardeProduit() {
-        StringBuilder sb = new StringBuilder();
+    public StringBuilder formatSauvegardeProduit(StringBuilder sb) {
         sb.append(this.getReference());
         sb.append(";");
         sb.append(this.getNom());
