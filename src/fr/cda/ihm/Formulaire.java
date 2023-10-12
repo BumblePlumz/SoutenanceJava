@@ -126,6 +126,10 @@ public class Formulaire
         this.elements = new Hashtable<String,JComponent>();
     }
 
+    public JFrame getFrame() {
+        return frame;
+    }
+
     /** Initialise l'applicatif.<br>Cette m?thode est utilis?e dans le cas o? quand on cr?e le formulaire on ne connait pas encore l'applicatif qui g?re le formulaire. On appelle alors cette m?thode pour initialiser l'applicatif du formulaire.
         @param app Un objet qui impl?mente l'interface Formulaireint */
     public void setApp(FormulaireInt app)

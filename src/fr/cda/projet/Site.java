@@ -1,13 +1,10 @@
 package projet;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.*;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import util.*;
+
+import javax.swing.*;
 
 /**
  * Classe de gestion des données du site de vente
@@ -17,14 +14,14 @@ import util.*;
  */
 public class Site
 {
-    public static final Logger logger = LogManager.getLogger(Site.class); // Gestion des logs d'erreurs
-    public static final Logger loggerInfo = LogManager.getLogger("info");
+
     public static int indexCommande = 1;
     public static int indexStock = 0;
     private final List<Produit> stock = new ArrayList<>();       // Les produits du stock
     private final List<Commande> commandes = new ArrayList<>();  // Les bons de commande
-    private final String stockFilePath = "src/fr/resources/Produits.txt";
-    private final String commandesFilePath= "src/fr/resources/Commandes.txt";
+    private String commandeFilePath = Configuration.commandesFilePath;
+    private String stockFilePath = Configuration.stockFilePath;
+
 
     /**
      * Constructeur
@@ -33,19 +30,31 @@ public class Site
     public Site()
     {
         try{
+            if (Configuration.sauvegardeLocale){
+                JFrame frame = new JFrame();
+                String[] options = {"Oui", "Non"};
+                int option = JOptionPane.showOptionDialog(frame, "Une sauvegarde local existe, Voulez-vous la charger ?", "Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
+                frame.setVisible(true);
+                if (option == 1){
+                    commandeFilePath = Configuration.localCommandesFilePath;
+                    stockFilePath = Configuration.localStockFilePath;
+                }
+                frame.setVisible(false);
+                Configuration.sauvegarderConfiguration();
+            }
             // lecture du fichier resources/Produits.txt | pour chaque ligne, on crée un Produit que l'on ajoute a stock
             initialiserStock(stockFilePath);
 
             // lecture du fichier resources/Commandes.txt | pour chaque ligne, on crée une Commande que l'on ajoute à commandes ou l'on ajoute la une référence d'un produit a une commande existante
-            initialiserCommandes(commandesFilePath);
+            initialiserCommandes(commandeFilePath);
 
             // On vérifie les commandes et génère les attributs raisons des commandes
             initialisationDesReferences();
 
         }catch(ProduitException e){
-            logger.error("Une collection n'a pas pu être chargée correctement", e);
+            Configuration.logger.error("Une collection n'a pas pu être chargée correctement", e);
         }catch(CommandeException e){
-            logger.error(e.getMessage(), e.getCause(), e.getStackTrace());
+            Configuration.logger.error(e.getMessage(), e.getCause(), e.getStackTrace());
         }
     }
 
@@ -85,10 +94,10 @@ public class Site
                 Site.indexStock++;
             }
         }catch (NullPointerException e){
-            logger.error("Une erreur est survenu dans l'initialisation des stock", e);
+            Configuration.logger.error("Une erreur est survenu dans l'initialisation des stock", e);
             throw new ProduitException(e.getMessage(), e.getCause());
         }catch (IndexOutOfBoundsException e){
-            logger.error("Une erreur est survenu dans l'initialisation des stock", e);
+            Configuration.logger.error("Une erreur est survenu dans l'initialisation des stock", e);
             throw new ProduitException(e.getMessage(), e.getCause());
         }
     }
@@ -192,12 +201,12 @@ public class Site
                 }
                 sb.append(commandes.get(numero).toString(true, true));
             }else{
-                logger.info("Une recherche hors champs a été détectée");
+                Configuration.logger.info("Une recherche hors champs a été détectée");
             }
         }catch (IndexOutOfBoundsException e){
-            logger.error("Une recherche a provoquée une erreur car l'index n'existe pas", e);
+            Configuration.logger.error("Une recherche a provoquée une erreur car l'index n'existe pas", e);
         }catch (NullPointerException e){
-            logger.error("Une recherche a provoquée une erreur car la liste de commande n'existe pas ou est vide", e);
+            Configuration.logger.error("Une recherche a provoquée une erreur car la liste de commande n'existe pas ou est vide", e);
         }
         return sb.toString();
     }
@@ -220,7 +229,7 @@ public class Site
                 }
             }
         }catch (NullPointerException e){
-            logger.error("Une erreur s'est produite dans l'affichage de toutes les commandes non livrées", e);
+            Configuration.logger.error("Une erreur s'est produite dans l'affichage de toutes les commandes non livrées", e);
         }
         return sb.toString();
     }
@@ -247,9 +256,9 @@ public class Site
 
         // Si on a validé autant de référence qu'il en existe on peut livrer la commande
         if (estValide){
-            loggerInfo.info("Commande : "+commande.getNumero()+" validée.");
+            Configuration.loggerInfo.info("Commande : "+commande.getNumero()+" validée.");
             soustraireStock(commande);
-            loggerInfo.info("-------------------------------------------------------");
+            Configuration.loggerInfo.info("-------------------------------------------------------");
         }
     }
 
@@ -270,7 +279,7 @@ public class Site
                 if (produit.getReference().equals(reference)) {
                     // Soustraction de la quantitée
                     produit.soutraireStock(quantite);
-                    loggerInfo.info("\tRetiré du stock : "+quantite+" "+produit.getReference());
+                    Configuration.loggerInfo.info("\tRetiré du stock : "+quantite+" "+produit.getReference());
                 }
             }
         }
@@ -317,7 +326,7 @@ public class Site
                     nombreDeReferenceDisponibleEnStock++;
                 }
             }catch(NumberFormatException e){
-                logger.fatal("Une erreur est survenu lors d'un calcul de stock", e);
+                Configuration.logger.fatal("Une erreur est survenu lors d'un calcul de stock", e);
             }
         }
         return nombreDeReferenceDisponibleEnStock == commande.getReferences().size();
@@ -345,54 +354,35 @@ public class Site
     }
 
     /**
-     * Sauvegarder les données des commandes dans le fichier commandes.txt
-     * @exception IOException Erreur dans la gestion d'un fichier
+     * Sauvegarde des données du stock
      */
-    public void sauvegarderCommandes(){
-        try {
-            FileWriter fileWriter = new FileWriter("src/fr/resources/Commandes.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            StringBuilder sb = new StringBuilder();
+    public void sauvegarderStock(String path){
+        StringBuilder sb = new StringBuilder();
 
-            // On recherche la dernière commande pour ne pas stocker de retour à la ligne.
-
-            for (Commande commande : commandes) {
-                if (commande != null){
-                    String c = commande.formatSauvegardeCommande(commande);
-                    if (!c.isEmpty()){
-                        sb.append(c);
-                    }
-                }
-            }
-            bufferedWriter.write(sb.toString());
-            bufferedWriter.newLine();
-            bufferedWriter.close();
-        }catch (IOException e){
-            throw new CommandeException("Erreur dans la sauvegarde des commandes", e.getCause());
+        for (Produit produit : stock) {
+            produit.formatSauvegardeProduit(sb);
+            sb.append("\n");
         }
+        StringBuffer stringBuffer = new StringBuffer(sb.toString());
+        Terminal.ecrireFichier(path, stringBuffer);
     }
 
     /**
-     * Sauvegarde des données du stock
-     * @exception IOException Erreur dans la gestion d'un fichier
+     * Sauvegarder les données des commandes dans le fichier commandes.txt
      */
-    public void sauvegarderStock(){
-        try {
-            FileWriter fileWriter = new FileWriter("src/fr/resources/Produits.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            StringBuilder sb = new StringBuilder();
+    public void sauvegarderCommandes(String path){
+        StringBuilder sb = new StringBuilder();
 
-            for (Produit produit : stock) {
-                produit.formatSauvegardeProduit(sb);
-                sb.append("\n");
+        // On recherche la dernière commande pour ne pas stocker de retour à la ligne.
+        for (Commande commande : commandes) {
+            if (commande != null){
+                String c = commande.formatSauvegardeCommande(commande);
+                if (!c.isEmpty()){
+                    sb.append(c);
+                }
             }
-            bufferedWriter.write(sb.toString());
-            bufferedWriter.newLine();
-
-            bufferedWriter.close();
-        }catch (IOException e){
-            throw new CommandeException(e.getMessage(), e.getCause());
         }
+        StringBuffer stringBuffer = new StringBuffer(sb.toString());
+        Terminal.ecrireFichier(path, stringBuffer);
     }
-
 }
