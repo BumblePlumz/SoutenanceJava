@@ -2,6 +2,7 @@ package projet;
 
 import ihm.Formulaire;
 import ihm.FormulaireInt;
+import util.Configuration;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -108,7 +109,7 @@ public class GUIModifierCommande implements FormulaireInt {
             formPP.form.setValeurChamp("RESULTATS", formPP.site.listerCommande(commande.getNumero(), false));
             form.fermer();
         }catch (IllegalStateException e){
-            Site.logger.error("Une erreur critique est survenu dans l'écoute des boutons du formulaire de modification");
+            Configuration.logger.error("Une erreur critique est survenu dans l'écoute des boutons du formulaire de modification");
             JOptionPane.showMessageDialog(null, "Une erreur est survenu votre action n'a pas été enregistrée", "Erreur critique", JOptionPane.INFORMATION_MESSAGE);
         }
     }

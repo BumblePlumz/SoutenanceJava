@@ -1,5 +1,7 @@
 package projet;
 
+import util.Configuration;
+
 import java.util.*;
 
 /**
@@ -112,7 +114,7 @@ public class Commande
         if (references != null){
             formatAfficherReference(sb);
         }else{
-            Site.logger.fatal("Une corruption de commande s'est produite ! Une vérification est nécessaire !");
+            Configuration.logger.fatal("Une corruption de commande s'est produite ! Une vérification est nécessaire !");
         }
 
         // L'affichage, doit-il prendre en compte les raisons
@@ -180,7 +182,7 @@ public class Commande
                     }
                 }
             }else{
-                Site.loggerInfo.info("Une erreur s'est produite dans la mise en forme des raisons d'une commande");
+                Configuration.loggerInfo.info("Une erreur s'est produite dans la mise en forme des raisons d'une commande");
             }
         }
 

@@ -1,6 +1,7 @@
 package projet;
 
 import ihm.*;
+import util.Configuration;
 
 import javax.swing.*;
 import java.util.*;
@@ -16,8 +17,8 @@ public class GUISite implements FormulaireInt
     // Protected permet l'accès aux méthodes de site dans les enfants donc les fenêtres de modifications
     protected Site site;
     // Formulaire placé en attribut pour l'accès des enfants à celui-ci et l'actualisation des affichages
-    protected Formulaire form = new Formulaire("Site de vente",this,1100,730);
-    private JCheckBox calculCheckBox;
+    protected Formulaire form = new Formulaire("Site de vente",this,false,1100,730,true);
+    private JCheckBox livraisonCheckBox;
 
     /**
      * Constructeur de l'ihm GUISite
@@ -26,7 +27,7 @@ public class GUISite implements FormulaireInt
     public GUISite(Site site)
     {
         this.site = site;
-        
+
         // Affichage des données
         form.setPosition(20, 20);
         form.addLabel("Afficher tous les produits du stock");
@@ -57,20 +58,24 @@ public class GUISite implements FormulaireInt
         form.addButton("CALC_VENTE", "Calculer les ventes");
         form.addLabel("");
         form.addButton("AJOUT_COMMANDE", "Ajouter un bon de commande");
-        form.setPosition(137, 600);
+
+        // Paramètres
+        form.setPosition(140,560);
+        form.addButton("PARAMETRE", "Paramètres");
 
         // Sauvegarder
+        form.setPosition(137, 600);
         form.addButton("SAUVER", "Sauvegarder");
-        form.setPosition(150, 640);
 
         // Fermer le programme
+        form.setPosition(150, 640);
         form.addButton("FERMER", "Quitter");
 
         // Affichage livraison automatique
         form.setPosition(190, 105);
-        calculCheckBox = new JCheckBox("Livraison automatique");
+        livraisonCheckBox = new JCheckBox("Livraison automatique");
         JPanel panel = new JPanel();
-        panel.add(calculCheckBox);
+        panel.add(livraisonCheckBox);
         form.addPanel(panel, 160, 40);
 
         form.setPosition(400,0);
@@ -99,7 +104,7 @@ public class GUISite implements FormulaireInt
                     form.setValeurChamp("RESULTATS",rsStock);
                     break;
                 case "AFF_COMMANDES":
-                    Boolean livraisonAutomatiqueOnOff = calculCheckBox.isSelected();
+                    Boolean livraisonAutomatiqueOnOff = livraisonCheckBox.isSelected();
                     form.setValeurChamp("RESULTATS", "");
                     String rsCommandes = site.listerToutesCommandes(livraisonAutomatiqueOnOff);
                     form.setValeurChamp("RESULTATS",rsCommandes);
@@ -129,15 +134,15 @@ public class GUISite implements FormulaireInt
                         String reAffichageCommande = site.listerCommande(identifiantModif, false);
                         form.setValeurChamp("RESULTATS",reAffichageCommande);
                     }catch (IllegalStateException e){
-                        Site.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
+                        Configuration.logger.error("Une erreur est survenue lors de la validation du formulaire de modification ", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch (ArrayIndexOutOfBoundsException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Configuration.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch (NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande valide avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Configuration.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
@@ -154,11 +159,11 @@ public class GUISite implements FormulaireInt
                         }
                     }catch (ArrayIndexOutOfBoundsException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Configuration.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }catch(NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Configuration.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
@@ -170,7 +175,7 @@ public class GUISite implements FormulaireInt
                         form.setValeurChamp("RESULTATS", site.listerCommande(id, false));
                     }catch (NumberFormatException e){
                         JOptionPane.showMessageDialog(null, "Veuillez affichez une commande avant d'essayer de la traiter", "Action impossible", JOptionPane.INFORMATION_MESSAGE);
-                        Site.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
+                        Configuration.logger.error("Une demande de traitement a été faite sans l'affichage préalable", e);
                         throw new GUISiteException("Une demande de traitement a été faite sans l'affichage préalable", e.getCause());
                     }
                     break;
@@ -198,15 +203,24 @@ public class GUISite implements FormulaireInt
                     try{
                         new GUIAjouterCommande(this);
                     }catch (GUIAjouterCommandeException e){
-                        Site.logger.error(e.getMessage(), e.getCause());
+                        Configuration.logger.error(e.getMessage(), e.getCause());
+                    }
+                    break;
+                case "PARAMETRE":
+                    try{
+                        new GUIParametre(this);
+                    }catch (GUIParametreException e){
+                        Configuration.logger.error(e.getMessage(), e.getCause());
                     }
                     break;
                 case "SAUVER":
                     try{
-                        site.sauvegarderCommandes();
-                        site.sauvegarderStock();
+                        site.sauvegarderCommandes(Configuration.commandesFilePath);
+                        site.sauvegarderStock(Configuration.stockFilePath);
+                        Configuration.sauvegardeLocale = false;
+                        Configuration.sauvegarderConfiguration();
                     }catch (CommandeException e){
-                        Site.logger.fatal(e.getMessage(), e);
+                        Configuration.logger.fatal(e.getMessage(), e);
                         JOptionPane.showMessageDialog(null, "Une erreur est survenue dans la sauvegarde des fichiers, merci de contacter un administrateur", "Erreur critique !", JOptionPane.INFORMATION_MESSAGE);
                     }finally {
                         JOptionPane.showMessageDialog(null, "Votre sauvegarde a bien été prise en compte", "Sauvegarde", JOptionPane.INFORMATION_MESSAGE);
@@ -219,7 +233,7 @@ public class GUISite implements FormulaireInt
                     throw new GUISiteException("Erreur critique action non autorisée", new IllegalArgumentException());
             }
         }catch (GUISiteException e){
-            Site.logger.fatal(e.getMessage(), e.getCause());
+            Configuration.logger.fatal(e.getMessage(), e.getCause());
         }
     }
 
