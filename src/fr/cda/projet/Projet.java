@@ -24,7 +24,7 @@ public class Projet
         Terminal.ecrireStringln("Execution du projet ");
 
         // On charge les configurations
-        Configuration.chargerConfiguraiton();
+        Configuration.chargerConfiguration();
 
         // Initialisation du programme
         Site site = new Site();

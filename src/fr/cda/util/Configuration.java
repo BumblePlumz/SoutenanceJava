@@ -45,7 +45,7 @@ import javax.swing.*;
    /**
     * Charger les paramètres du fichier src/fr/resources/config.cfg
     */
-   public static void chargerConfiguraiton(){
+   public static void chargerConfiguration(){
       String[] lignes = Terminal.lireFichierTexte(paramFilePath);
       for (String ligne : lignes) {
          if (ligne.startsWith("paramSauvegardeLocale=")){
