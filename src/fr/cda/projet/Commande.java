@@ -169,11 +169,11 @@ public class Commande
         if (!livrer) {
             String[] raisons = getSplitRaison();
             // On vérifie que des raisons exitent
-            if (raison.length() > 0){
+            if (raisons.length > 0){
                 for (int i = 0; i < raisons.length; i++) {
                     // On vérifie que les raisons ne sont pas vides
                     if (!raisons[i].isEmpty()){
-                        String[] donnees = raison.split("=");
+                        String[] donnees = raisons[i].split("=");
                         String texte = "Il manque "+donnees[1]+" "+donnees[0];
                         sb.append(texte);
                         sb.append("\n");

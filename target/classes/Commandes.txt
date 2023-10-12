@@ -5,7 +5,7 @@
 2;22/09/2022;Chirac Bernadette;VETEMENT-3=7;true
 2;22/09/2022;Chirac Bernadette;LIVRE-3=7;true
 3;23/09/2022;Martin Jacques;LIVRE-1=8;true
-4;23/09/2022;Bruni Carla;LIVRE-1=9;false
+4;23/09/2022;Bruni Carla;LIVRE-1=9;true
 5;23/09/2022;Hollande François;LIVRE-2=4;false
 5;23/09/2022;Hollande François;VETEMENT-4=5;false
 5;23/09/2022;Hollande François;VETEMENT-5=6;false

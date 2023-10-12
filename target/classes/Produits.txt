@@ -1,5 +1,5 @@
-LIVRE-1;Les Miserables de Victor Hugo ;8.5;9
-LIVRE-2;La Peste de Albert Camus;8.5;2
+LIVRE-1;Les Miserables de Victor Hugo ;8.5;0
+LIVRE-2;La Peste de Albert Camus;8.5;4
 LIVRE-3;Le Père Goriot de Honoré de Balzac;11.0;0
 LIVRE-4;L'étranger de Albert Camus;11.0;4
 LIVRE-5;Voyage au bout de la nuit de Louis-ferdinand Céline;11.0;6

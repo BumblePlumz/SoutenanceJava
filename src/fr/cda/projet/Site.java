@@ -157,7 +157,6 @@ public class Site
     public String listerToutesCommandes(boolean calcul)
     {
         StringBuilder sb = new StringBuilder();
-        System.out.println("Lister toutes les commandes");
         for (int i = 1; i < commandes.size(); i++) {
             if (calcul){
                 // On calcule la commande pour être sûr que les données raison sont à jour
@@ -285,13 +284,11 @@ public class Site
      * @return boolean Est-elle valide pour livraison
      */
     private boolean estValide(Commande commande) {
-        System.out.println("Méthode estValide : ");
         commande.setRaison("");
         List<String> refs = commande.getReferences();
         int nombreDeReferenceDisponibleEnStock = 0;
 
         // Pour toutes les références d'une commande on vérifie l'état des stocks
-        System.out.println("On boucle sur les références : ");
         for (String ref : refs) {
             try{
                 String[] refParts = ref.split("=");
@@ -305,10 +302,7 @@ public class Site
                 // Attribut de vérification pour savoir si un produit a été trouvé.
                 boolean referanceEnStock = false;
 
-                System.out.println("Référence en cours de boucle : "+ref);
-
                 // Pour tous les produits
-                System.out.println("On boucle sur les produits");
                 for (Produit produit : stock) {
                     if (produit.getReference().equals(reference)){
                         // Vérification de la disponibilité
@@ -336,7 +330,6 @@ public class Site
      * @param produit le produit concernant la commmande et la quantité
      */
     private void formatAjoutOuNouvelleRaison(Commande commande, int quantite, Produit produit) {
-        System.out.println("FormatAjoutOuNouvelleRaison");
         StringBuilder sb = new StringBuilder();
 
         // Mise en forme de la donnée raison
@@ -349,7 +342,6 @@ public class Site
         }else{
             commande.ajoutRaison(sb.toString());
         }
-        System.out.println("commande raison : "+sb.toString());
     }
 
     /**
